@@ -1,0 +1,15 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Sep 10 16:29:44 2022
+# Process ID: 760
+# Current directory: C:/Users/Adam/Desktop/ECE 3829/Lab 2/lab_2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent9220 C:\Users\Adam\Desktop\ECE 3829\Lab 2\lab_2\lab_2.xpr
+# Log file: C:/Users/Adam/Desktop/ECE 3829/Lab 2/lab_2/vivado.log
+# Journal file: C:/Users/Adam/Desktop/ECE 3829/Lab 2/lab_2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Adam/Desktop/ECE 3829/Lab 2/lab_2/lab_2.xpr}
+update_compile_order -fileset sources_1
+archive_project {C:/Users/Adam/Desktop/ECE 3829/Lab 2/lab_2.xpr.zip} -temp_dir {C:/Users/Adam/Desktop/ECE 3829/Lab 2/lab_2/.Xil/Vivado-760-DESKTOP-0FOP0U3} -force -include_local_ip_cache -include_config_settings

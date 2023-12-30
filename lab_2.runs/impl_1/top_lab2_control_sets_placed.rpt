@@ -1,0 +1,89 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+-------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sun Sep 11 04:40:40 2022
+| Host         : DESKTOP-0FOP0U3 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file top_lab2_control_sets_placed.rpt
+| Design       : top_lab2
+| Device       : xc7a35t
+-------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    11 |
+|    Minimum number of control sets                        |    11 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    46 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    11 |
+| >= 0 to < 4        |     5 |
+| >= 4 to < 6        |     1 |
+| >= 6 to < 8        |     0 |
+| >= 8 to < 10       |     1 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     0 |
+| >= 16              |     2 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |              14 |            9 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             125 |           34 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |              15 |            6 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+-----------------------------+---------------------------------------------+------------------+----------------+--------------+
+|          Clock Signal         |        Enable Signal        |               Set/Reset Signal              | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------------------+-----------------------------+---------------------------------------------+------------------+----------------+--------------+
+|  clk_mmcm_wizi/inst/clk_25MHz |                             | vga_controller_640_60i/VS0                  |                1 |              1 |         1.00 |
+|  clk_mmcm_wizi/inst/clk_25MHz |                             | vga_controller_640_60i/HS0                  |                1 |              1 |         1.00 |
+|  debouncei/slow_clk           |                             |                                             |                1 |              2 |         2.00 |
+|  debouncej/slow_clk_reg_n_0   |                             |                                             |                1 |              2 |         2.00 |
+|  debouncek/slow_clk_reg_n_0   |                             |                                             |                1 |              2 |         2.00 |
+|  clk_mmcm_wizi/inst/clk_25MHz | vga_displayi/update_en      | vga_displayi/block_y[8]_i_1_n_0             |                2 |              4 |         2.00 |
+|  clk_mmcm_wizi/inst/clk_25MHz |                             |                                             |                6 |              8 |         1.33 |
+|  clk_mmcm_wizi/inst/clk_25MHz |                             | vga_controller_640_60i/hcounter[10]_i_1_n_0 |                3 |             11 |         3.67 |
+|  clk_mmcm_wizi/inst/clk_25MHz | vga_controller_640_60i/eqOp | vga_controller_640_60i/vcounter[10]_i_1_n_0 |                4 |             11 |         2.75 |
+|  clk_mmcm_wizi/inst/clk_25MHz |                             | debouncek/Q2_reg_0                          |                7 |             32 |         4.57 |
+|  clk_mmcm_wizi/inst/clk_25MHz |                             | debouncek/SR[0]                             |               22 |             80 |         3.64 |
++-------------------------------+-----------------------------+---------------------------------------------+------------------+----------------+--------------+
+
+
