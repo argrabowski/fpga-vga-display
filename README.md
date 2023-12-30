@@ -26,7 +26,7 @@ This project involves creating a VGA display controller, a seven-segment display
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/your-username/ece3829_lab2.git
+   git clone https://github.com/argrabowski/fpga-vga-display.git
    ```
 
 2. Open the project files in your Verilog development environment (e.g., Vivado).
